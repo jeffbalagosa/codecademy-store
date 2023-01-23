@@ -16,6 +16,7 @@ Extra Credit:
 
 */
 
+// #1
 export const searchTermReducer = (state = "", action) => {
   switch (action.type) {
     case "searchTerm/setSearchTerm": {
@@ -31,6 +32,7 @@ export const searchTermReducer = (state = "", action) => {
   }
 };
 
+// #2
 export const setSearchTerm = (term) => {
   return {
     type: "searchTerm/setSearchTerm",
@@ -38,6 +40,7 @@ export const setSearchTerm = (term) => {
   };
 };
 
+// #3
 export const clearSearchTerm = () => {
   return {
     type: "searchTerm/clearSearchTerm",
